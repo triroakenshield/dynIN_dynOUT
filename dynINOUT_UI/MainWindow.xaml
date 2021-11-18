@@ -22,7 +22,6 @@
                         <CheckBox IsChecked="{Binding Value}" Grid.Column="0" 
                                   Margin="5,5,5,5" VerticalContentAlignment="Center" 
                                   Content="{Binding Key, Mode=OneWay}"/>
-
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
