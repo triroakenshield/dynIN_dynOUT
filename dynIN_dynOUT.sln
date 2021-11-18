@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynINOUT_2013", "dynINOUT_2013\dynINOUT_2013.csproj", "{9CFB813C-8396-4344-B686-EF058A194034}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynINOUT_2018", "dynINOUT_2018\dynINOUT_2018.csproj", "{82F09722-45AB-4A92-AAB5-CFC00D1645AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynINOUT_2019", "dynINOUT_2019\dynINOUT_2019.csproj", "{95D76FF6-26C6-40FA-B37C-109D7BACC0E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynINOUT_2022", "dynINOUT_2022\dynINOUT_2022.csproj", "{8A9471EC-1E3D-4725-9CAD-E8FE6D259BDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynINOUT_UI", "dynINOUT_UI\dynINOUT_UI.csproj", "{8D1BEF8A-7F55-4788-B3E2-FD07F638A774}"
 EndProject
@@ -63,8 +65,15 @@ Global
 		{3F6B9F9A-5A32-4EC5-8541-635FFD46A8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F6B9F9A-5A32-4EC5-8541-635FFD46A8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F6B9F9A-5A32-4EC5-8541-635FFD46A8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A9471EC-1E3D-4725-9CAD-E8FE6D259BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A9471EC-1E3D-4725-9CAD-E8FE6D259BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A9471EC-1E3D-4725-9CAD-E8FE6D259BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A9471EC-1E3D-4725-9CAD-E8FE6D259BDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {918E8FEE-60B6-45B3-BA88-3A88D6F9001D}
 	EndGlobalSection
 EndGlobal
