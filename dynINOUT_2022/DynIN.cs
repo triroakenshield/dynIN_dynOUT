@@ -69,7 +69,7 @@ namespace dynIN_dynOUT
             }
 
             //Блокируем документ
-            using (var docLock = acDoc.LockDocument())
+            using (acDoc.LockDocument())
             {
                 //Прежде всего пройдемся по всем объектам 
                 //и посмотрим все ли слои есть в базе
@@ -129,7 +129,7 @@ namespace dynIN_dynOUT
 
                         var acBlRef = acTrans.GetObject(id, Db.OpenMode.ForWrite) as Db.BlockReference;
                         var blr = (Db.BlockTableRecord)acTrans.GetObject(acBlRef.DynamicBlockTableRecord,
-                                                                    Db.OpenMode.ForRead);
+                            Db.OpenMode.ForRead);
 
                         prop.Handle = acBlRef.Handle;
                         prop.BlockName = acBlRef.EffectiveName();
@@ -167,7 +167,7 @@ namespace dynIN_dynOUT
                                 foreach (Db.ObjectId AttID in attrCol)
                                 {
                                     var acAttRef = acTrans.GetObject(AttID,
-                                                            Db.OpenMode.ForRead) as Db.AttributeReference;
+                                        Db.OpenMode.ForRead) as Db.AttributeReference;
 
                                     foreach (var i in prop.Attribut)
                                     {
@@ -182,7 +182,7 @@ namespace dynIN_dynOUT
                                         }
                                     }
                                 }
-                            }   //Проверка что кол аттрибутов больше 0
+                            }   //Проверка что кол атрибутов больше 0
                         }  //Проверка наличия атрибутов
 
                         var acBlockDynProp = acBlRef.DynamicBlockReferencePropertyCollection;
@@ -227,8 +227,8 @@ namespace dynIN_dynOUT
                                                     d = int.Parse(i.Value.ToString());
                                                     break;                          //return true;
                                                 case (short)DwgDataType.kDwgInt16:  //3 
-                                                                                    //Flip state
-                                                                                    //Block Properties Table
+                                                    //Flip state
+                                                    //Block Properties Table
 
                                                     //Отрицательное значение - вроде как выставленное по умолчанию...
                                                     // и отрицательное значение не присвоить Block Properties Table

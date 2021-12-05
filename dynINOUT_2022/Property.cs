@@ -133,21 +133,20 @@ namespace dynIN_dynOUT
 
         public string[] Gets(List<string> rowHead)
         {
-            //Создаем массив длинной , равной длинне заголовка
+            //Создаем массив длинной , равной длине заголовка
             var row = new string[rowHead.Count];
             //Все ячейки массива заполняем по умолчанию табуляциями
             for (var i = 0; i < row.Length; i++)
                 row[i] = "";
 
             //В первую ячейку массива пишу хендл объекта
-            row[0] = $"\'{Handle.Value.ToString()}";
+            row[0] = $"\'{Handle.Value}";
 
             foreach (var i in Attribut)
             {
                 var indxUnicAttName = rowHead.FindIndex(x => x == "a_" + i.Key);
                 row[indxUnicAttName] = i.Value;
             }
-
 
             foreach (var i in DynProp)
             {
